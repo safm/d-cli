@@ -21,19 +21,6 @@ async function start() {
     .description("Order a MacBook Pro 16")
     .action(order);
 
-  program
-    .command("quit")
-    .description("Quit the CLI")
-    .action(() => {
-      if (process & process.send) {
-        process.send("quit");
-      } else {
-        console.log(
-          "Sorry! Cannot the kill the process. Please press ctrl+c to quit"
-        );
-      }
-    });
-
   await program.parseAsync(process.argv);
 }
 
