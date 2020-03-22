@@ -9,17 +9,17 @@ npm ci
 node index -h
 ```
 
-## Some of the support commands
+## Supported commands
 
 ```bash
-# check version of this program
+# check version of this CLI
 node index -V
 
 # to get more help regarding a particular command
 # for example if you need to get more information about the `ls` command
 node index help ls
 
-# diff between two files. files test1.txt & test2.txt is included in the repo
+# diff between two files. files test1.txt & test2.txt are included in the repo
 node index diff file1.txt file2.txt
 
 # list all files for a given path
